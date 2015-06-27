@@ -17,7 +17,6 @@
 
   <script src="/js/main.js"></script>
 
-  <link rel="stylesheet" src="http://cdn.getforge.com/hamster.getforge.io/1434961037/css/style.css"/>
 </head>
 
 
@@ -62,13 +61,13 @@
 
         <time class="today">
             <div ng-show="(latest - today) > 0" class="ahead ng-binding">
-            1 entries ahead</div>
+            [[latest - today]] entries ahead</div>
 
            <div ng-show="(latest - today) == 0" class="ontrack ng-hide">
             On Track!</div>
 
            <div ng-show="(latest - today) < 0" class="ng-binding ng-hide">
-            1 entries behind</div>
+            [[ -(latest - today)]] entries behind</div>
 
         Fri Jun 26 2015</time>
 
