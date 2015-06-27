@@ -2,7 +2,7 @@
 title: Daily Lettering
 email: test@domain.com
 description: One stroke at a time
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/project365" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: sophiehwang
 github_username:  sophiehwang
