@@ -1,6 +1,6 @@
 #### project365 counter
 
 http://sophiehwang.github.io/project365/
-Counter for my lettering post. Let me know if i am behind or ahead.
+Lettering post counter. Keep me on track.
 
-You may also follow me at http://doodleandletters.tumblr.com
+You may also follow my daily post at http://doodleandletters.tumblr.com
