@@ -2,21 +2,21 @@
 layout: default
 ---
 
-<div class="home" ng-app="RSSFeedApp">
-
+<div class="home" ng-controller="FeedCtrl">
         <time class="today">
-            <div ng-show="(latest - today) > 0" class="ahead ng-binding">
-            [[diff]] entries ahead</div>
+            <div ng-show="(latest - todayCount) > 0" class="ahead ng-binding">
+            [[latest - todayCount]] entries ahead</div>
 
-           <div ng-show="(latest - today) == 0" class="ontrack ng-hide">
-            [[diff]]</div>
+           <div ng-show="(latest - todayCount) == 0" class="ontrack ng-hide">
+            On track!</div>
 
-           <div ng-show="(latest - today) < 0" class="ng-binding ng-hide">
-            [[ - diff]] entries behind</div>
+           <div ng-show="(latest - todayCount) < 0" class="ng-binding ng-hide">
+            [[ - (latest - todayCount) ]] entries behind</div>
 
-        Fri Jun 26 2015</time>
+            [[today]]
+       </time>
 
-      <div class="col-wrapper" ng-controller="FeedCtrl">
+      <div class="col-wrapper" >
             <ul class="grid ">
                  <li class="col col-2" ng-repeat="feed in feeds | filter:filterText">
 

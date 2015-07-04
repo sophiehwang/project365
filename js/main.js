@@ -3,11 +3,10 @@
 // date counter
 	var now = new Date();
 	var start = new Date(now.getFullYear(), 0, 0);
-	var diff = now - start;
+	var timeDiff = now - start;
 	var oneDay = 1000 * 60 * 60 * 24;
-	var day = Math.floor(diff / oneDay);
-	$('.today').append(now.toDateString());
-    // $('.day-count').append(day);
+	var uptodate = Math.floor(timeDiff / oneDay); // day x
+
 
 var app = angular.module('RSSFeedApp', [], function($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
@@ -24,10 +23,11 @@ app.controller("FeedCtrl", ['$scope','FeedService', function ($scope, Feed) {
         });
 
 
+				$scope.todayCount = uptodate;
 
-        $scope.today =  day ;
+				$scope.today = now.toDateString();
 
-				$scope.diff = diff;
+				// $scope.diff = uptodate - parseInt($scope.latest);
 
 //feeds[0].title.match("^[0-9]{3}")
 
