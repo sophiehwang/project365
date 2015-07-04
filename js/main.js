@@ -27,9 +27,9 @@ app.controller("FeedCtrl", ['$scope','FeedService', function ($scope, Feed) {
 
         $scope.today =  day ;
 
-				// $scope.diff = function{
-				// 		return latest - today;
-				// }
+				$scope.diff = function(){
+						return latest - today;
+				}
 
 //feeds[0].title.match("^[0-9]{3}")
 
