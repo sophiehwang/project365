@@ -6,13 +6,13 @@ layout: default
 
         <time class="today">
             <div ng-show="(latest - today) > 0" class="ahead ng-binding">
-            [[latest - today]] entries ahead</div>
+            {{diff}}</div>
 
            <div ng-show="(latest - today) == 0" class="ontrack ng-hide">
-            On Track!</div>
+            {{diff}}</div>
 
            <div ng-show="(latest - today) < 0" class="ng-binding ng-hide">
-            [[ -(latest - today)]] entries behind</div>
+            {{diff}}</div>
 
         Fri Jun 26 2015</time>
 
