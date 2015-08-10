@@ -28,12 +28,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 $color-ahead : #56B78E;
 $color-behind : #DD5C3D;
 
-// Using media queries with like this:
+// Using media queries with like this: test
 // @include media-query($on-palm) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
